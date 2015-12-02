@@ -1,0 +1,11 @@
+body {background: url(back.jpg) no-repeat; background-size: cover;}
+a {text-decoration: none;}
+.topmenu {float: right; margin: 30px 80px 0 0 ;}
+.head img{margin: 10px 0 0 10px;}
+.topmenu a {margin: 0 20px 0 0; color: blue; font-size: 18px}
+.topmenu a:hover {color: orange;}
+.headtext h1 {float: right; font-family: serif ; font-size: 50px; color: #008000; margin: 20px 180px 0 0;}
+h2 {text-align: center;}
+table {margin: auto; table-layout: fixed; width: 600px; height: 250px; text-align: center; border-color: greenyellow; border-collapse: separate; border-radius: 50px;}
+footer p{text-align: center; color: white;}
+img {border-radius: 20px;}
