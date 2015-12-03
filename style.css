@@ -1,4 +1,4 @@
-body {background: url(back.jpg) no-repeat; background-size: cover;}
+body {background: url(image/back.jpg) no-repeat; background-size: cover;}
 a {text-decoration: none;}
 .topmenu {float: right; margin: 30px 80px 0 0 ;}
 .head img{margin: 10px 0 0 10px;}
@@ -7,9 +7,6 @@ a {text-decoration: none;}
 .headtext h1 {float: right; font-family: serif ; font-size: 50px; color: #008000; margin: 20px 180px 0 0;}
 h2 {text-align: center;}
 table {margin: auto; table-layout: fixed; width: 600px; height: 250px; text-align: center; border-color: greenyellow; border-collapse: separate; border-radius: 50px;}
-footer p{text-align: center; color: white;}
-<<<<<<< HEAD
+footer p{text-align: center; color: white;position: absolute; bottom: 0; right: 650px;}
 img {border-radius: 20px;}
-=======
-img {border-radius: 20px;}
->>>>>>> d40720d4b62b86922c64ad06cccd7500f2bb5fd8
+
