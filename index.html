@@ -2,41 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/index.css" rel="stylesheet">
     <title>WeatherKids</title>
+    <link href="css/index.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/audio.js"></script>
 </head>
 <body>
-    <div class="head">
+    <div class="main">
         <header>
-            <div class="topmenu";
-                <aside>
-                    <a href="#">Головна</a>
-                    <a href=>На 3 дні</a>
-                    <a href="#">Контакт</a>
-                </aside>
+            <div id="logohead">
+                <img id="sun" src="img/sunny.png">           
+                <img id="logo" src="img/logo.png"></a> 
             </div>
-            <img src="image/logo.png" alt="Logo" title="Logo">
+            <div id="sound">
+                <button onclick="playAud()" type="button"><img src="img/play.png"></button>
+                <button onclick="pauseAud()" type="button"><img src="img/pause.png"></button> 
+                <audio id="myAudio" >
+                    <source src="sound/sun.mp3">
+                </audio>
+            </div>   
         </header>
-    </div>
         <section>
-                <article>
-                        <header>
-                           <div class="block"></div>
-                                <table>
-                                    <tr>
-
-                                        <!--<td> <img src="image/snow.png" alt=""></td>-->
-
-                                        <td> <div id="SinoptikInformer" style="width:250px;" class="SinoptikInformer type1"><div class="siHeader"><div class="siLh"><div class="siMh"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/" target="_blank">Погода</a><a onmousedown="siClickCount();" class="siLogo" href="https://ua.sinoptik.ua/" target="_blank"> </a> <span id="siHeader"></span></div></div></div><div class="siBody"><div class="siCity"><div class="siCityName"><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-львів" target="_blank">Погода у <span>Львові</span></a></div><div id="siCont0" class="siBodyContent"><div class="siLeft"><div class="siTerm"></div><div class="siT" id="siT0"></div><div id="weatherIco0"></div></div><div class="siInf"><p>вологість: <span id="vl0"></span></p><p>тиск: <span id="dav0"></span></p><p>вітер: <span id="wind0"></span></p></div></div></div><div class="siLinks"><span><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-львів" target="_blank">на сьогодні</a> <a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-львів/завтра" target="_blank">завтра</a> <a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/погода-львів/10-днів" target="_blank">10 днів</a></span> <span><a onmousedown="siClickCount();" href="https://ua.sinoptik.ua/україна" target="_blank">в інших містах</a></span></div></div><div class="siFooter"><div class="siLf"><div class="siMf"></div></div></div></div><script type="text/javascript" charset="UTF-8" src="//sinoptik.ua/informers_js.php?title=4&amp;wind=3&amp;cities=303014487&amp;lang=ua"></script></td>
-
-                                        <td><img src="image/winter.png" alt=""></td>
-                                    </hr>
-                                </table>
-                           </div>
-                        </header>
-                </article>
+<!--            <img id="div1" src="img/cloud.png"><br>-->
+<!--            <img id="div4"src="img/cloud.png"><br>-->
+<!--            <img id="div3"src="img/cloud.png"><br>-->
+            <br>   
+            <div id="weather">
+                <table align="center" cellspacing="1" border="1">
+                    <tr>
+                        <th>Location: </th>
+                        <td><span id="loc"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Current temperature: </th>
+                        <td><span id="temp"></span> &deg;C</td>
+                    </tr>            
+                </table>    
+            </div>
+        </section>
         <footer>
-                <p>Copyright &copy; 2015 WeatherKids</p>
+            <p>Copyright &copy; 2015 WeatherKids</p>
         </footer>
+    </div>
+
 </body>
 </html>
