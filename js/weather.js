@@ -8,7 +8,7 @@ var weatherAPI = 'http://api.openweathermap.org/data/2.5/weather?lat='+position.
 $.getJSON(weatherAPI, function(response) {
     console.log(response);
     $('#loc').html(response.name);
-    $('#temp').html(Math.floor(response.main.temp) + '&deg;C');
+    $('#temp').html(Math.floor(response.main.temp) + ' &deg;C');
     });
 }
     
