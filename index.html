@@ -4,47 +4,62 @@
     <meta charset="UTF-8">
     <title>WeatherKids</title>
     <link href="css/index.css" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/audio.js"></script>
+   
 </head>
 <body>
     <div class="main">
         <header>
             <div id="logohead">
-                <img id="sun" src="img/sunny.png">           
-                <img id="logo" src="img/logo.png"></a> 
+                <img id="sun" src="images/sunny.png">           
+                <img id="logo" src="images/logo.png"></a> 
             </div>
             <div id="sound">
-                <button onclick="playAud()" type="button"><img src="img/play.png"></button>
-                <button onclick="pauseAud()" type="button"><img src="img/pause.png"></button> 
+                <button onclick="playAud()" type="button"><img src="images/play.png"></button>
+                <button onclick="pauseAud()" type="button"><img src="images/pause.png"></button> 
                 <audio id="myAudio" >
                     <source src="sound/sun.mp3">
                 </audio>
             </div>   
         </header>
         <section>
-<!--            <img id="div1" src="img/cloud.png"><br>-->
-<!--            <img id="div4"src="img/cloud.png"><br>-->
-<!--            <img id="div3"src="img/cloud.png"><br>-->
-            <br>   
-            <div id="weather">
-                <table align="center" cellspacing="1" border="1">
-                    <tr>
-                        <th>Location: </th>
-                        <td><span id="loc"></span></td>
-                    </tr>
-                    <tr>
-                        <th>Current temperature: </th>
-                        <td><span id="temp"></span></td>
-                    </tr>            
-                </table>    
-            </div>
+            <img class="cloud" id="div1" src="images/cloud.png"><br>
+            <img class="cloud" id="div4"src="images/cloud.png"><br>
+            <img class="cloud" id="div3"src="images/cloud.png"><br>
+            <div id="weatherfind">
+            <form id="formCity">
+                <label for="cityName">Enter city name:</label>
+                <input id="inputCityName" type="text" name="cityName"/>
+                <input type="button" id="btnGetWeather" value="Get Weather"/>
+            </form>
+
+            <p>City: <span id="location" ></span></p>
+            <table id="weatherTable"></table>
+            <p id="error"></p>
+                </div>   
+                <div id="weatherloc">
+                    <table >
+                        <tr>
+    <!--                        <th>Location: </th>-->
+                            <td><span id="loc"></span></td>
+                        </tr>
+                        <tr>
+    <!--                        <th>Current temperature: </th>-->
+                            <td><span id="temp"></span> </td>
+                        </tr>            
+                    </table>    
+                </div>
+
         </section>
         <footer>
             <p>Copyright &copy; 2015 WeatherKids</p>
         </footer>
     </div>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/weather-by-city.js"></script>
+    <script src="js/index.js"></script
 </body>
 </html>
