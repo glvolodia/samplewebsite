@@ -18,7 +18,7 @@ $(function(){
         var offset = (new Date()).getTimezoneOffset()*60*1000; 
         var city = data.city.name;
         var country = data.city.country;
-        $("#weatherTable tr:not(:first)").remove(); // Remove all rows except first
+        $("#weatherTable tr").remove(); // Remove all rows except first
         // Next is the loop that goes on all elements in data.list array
         $.each(data.list, function(){
             // "this" holds weather object from this source: http://openweathermap.org/forecast16
