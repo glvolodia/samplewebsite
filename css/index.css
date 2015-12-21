@@ -1,7 +1,6 @@
 .main {
     width:90%;
     height:100%;
-    border: 0px solid silver;
     margin:auto;
     font-family: 'Aladin', cursive;
     color: blue;
@@ -152,7 +151,7 @@ footer {
     border-radius: 5px;
     background-color:aliceblue;
     text-align: center;
-    border:1px solid silver;
+    border: 1px solid silver;
     background-position: 50% 50%;
     box-shadow: 0 0 10px rgba(0,0,0,.5);
     background-repeat: no-repeat; 
