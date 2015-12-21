@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <title>WeatherKids</title>
     <link href="css/index.css" rel="stylesheet">
-   
 </head>
 <body>
     <div class="main">
         <header>
             <div id="logohead">
-                <img id="sun" src="images/sun.png">           
-                <img id="logo" src="images/logo.png"></a> 
+                <img id="sun" src="images/sun.png" alt="sun">           
+                <img id="logo" src="images/logo.png" alt="logo"></a> 
             </div>
             <div id="sound">
-                <button onclick="playAud()" type="button"><img src="images/play.png"></button>
-                <button onclick="pauseAud()" type="button"><img src="images/pause.png"></button> 
+                <button onclick="playAud()" type="button"><img src="images/play.png" alt="play"></button>
+                <button onclick="pauseAud()" type="button"><img src="images/pause.png" alt="pause"></button> 
                 <audio id="myAudio" >
                     <source src="sound/sun.mp3">
                 </audio>
             </div>   
         </header>
         <section>
-            <img class="cloud" id="div1" src="images/cloud.png"><br>
-            <img class="cloud" id="div4"src="images/cloud.png"><br>
-            <img class="cloud" id="div3"src="images/cloud.png"><br>
+            <img class="cloud" id="div1" src="images/cloud.png" alt="cloud"><br>
+            <img class="cloud" id="div4"src="images/cloud.png" alt="cloud"><br>
+            <img class="cloud" id="div3"src="images/cloud.png" alt="cloud"><br>
             <div id="weatherfind">
             <form id="formCity">
                 <label for="cityName">Enter city name:</label>
                 <input id="inputCityName" type="text" name="cityName"/>
                 <input type="button" id="btnGetWeather" value="Get Weather"/>
             </form>
-
             <p>City: <span id="location" ></span></p>
             <table id="weatherTable"></table>
             <p id="error"></p>
@@ -57,6 +55,6 @@
     <script src="js/weather.js"></script>
     <script src="js/audio.js"></script>
     <script src="js/weather-by-city.js"></script>
-    <script src="js/index.js"></script
+    <script src="js/index.js"></script>
 </body>
 </html>
